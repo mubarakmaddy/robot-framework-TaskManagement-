@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180503 12:59:14.128" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\GreytHR\Tests\Admin\TaskManagement.robot" id="s1" name="TaskManagement">
+<test id="s1-t1" name="Admin User should be able to delete a checklist having no active instances">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:14.468" level="INFO">Opening browser 'gc' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180503 12:59:19.541" starttime="20180503 12:59:14.468"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180503 12:59:20.684" starttime="20180503 12:59:19.542"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:20.685" starttime="20180503 12:59:14.467"></status>
+</kw>
+<kw name="Login To GreytHR Application" library="TMAdminApp">
+<arguments>
+<arg>${Admin_Login_credentials}</arg>
+</arguments>
+<kw name="Load GreytHR" library="LoginPage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL.${Enironment}}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:20.687" level="INFO">Opening url 'http://demotask.gtadmin.gr8hr.biz/'</msg>
+<status status="PASS" endtime="20180503 12:59:21.621" starttime="20180503 12:59:20.687"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:21.622" starttime="20180503 12:59:20.686"></status>
+</kw>
+<kw name="Enter User Name" library="LoginPage">
+<arguments>
+<arg>${Login_credentials}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${LoginPage_UserName_TextField}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:22.190" starttime="20180503 12:59:21.623"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LoginPage_UserName_TextField}</arg>
+<arg>${Login_credentials.UserName}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:22.191" level="INFO">Typing text 'Majordomo1' into text field 'name=j_username'</msg>
+<status status="PASS" endtime="20180503 12:59:22.471" starttime="20180503 12:59:22.191"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:22.471" starttime="20180503 12:59:21.622"></status>
+</kw>
+<kw name="Enter Password" library="LoginPage">
+<arguments>
+<arg>${Login_credentials}</arg>
+</arguments>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LoginPage_Password_TextField}</arg>
+<arg>${Login_credentials.Password}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:22.473" level="INFO">Typing password into text field 'name=j_password'</msg>
+<status status="PASS" endtime="20180503 12:59:22.653" starttime="20180503 12:59:22.472"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:22.653" starttime="20180503 12:59:22.471"></status>
+</kw>
+<kw name="Click on Login button" library="LoginPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginPage_Login_Button}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:22.655" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" endtime="20180503 12:59:30.760" starttime="20180503 12:59:22.654"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:30.760" starttime="20180503 12:59:22.654"></status>
+</kw>
+<kw name="Verify Home page is loaded" library="GreytHRHomePage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${GHR_HomePageTitle}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:30.858" starttime="20180503 12:59:30.761"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${GHR_HomePageTitle}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:30.858" level="INFO">Verifying element 'xpath=//a[@href="#feeds"]' is visible.</msg>
+<status status="PASS" endtime="20180503 12:59:30.896" starttime="20180503 12:59:30.858"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:30.896" starttime="20180503 12:59:30.760"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:30.897" starttime="20180503 12:59:20.685"></status>
+</kw>
+<kw name="Navigate to checklist Dashboard Page from System Settings" library="TMAdminApp">
+<kw name="Click on Settings Header Icon" library="GreytHRNavigation">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GreytHRNavigation_settings_header_icon}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:30.899" level="INFO">Clicking element 'xpath=//i[@class='icon-gears custom-icon']'.</msg>
+<status status="PASS" endtime="20180503 12:59:34.757" starttime="20180503 12:59:30.898"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:34.758" starttime="20180503 12:59:30.898"></status>
+</kw>
+<kw name="Click on System Settings Menu Icon" library="GreytHRNavigation">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${GreytHRNavigation_system_settings_supermenu_icon}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:34.893" starttime="20180503 12:59:34.759"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GreytHRNavigation_system_settings_supermenu_icon}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:34.894" level="INFO">Clicking element 'xpath=(//i[@class='icon-gears'])[1]'.</msg>
+<status status="PASS" endtime="20180503 12:59:35.213" starttime="20180503 12:59:34.894"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:35.213" starttime="20180503 12:59:34.758"></status>
+</kw>
+<kw name="Click on Checklist Menu" library="GreytHRNavigation">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GreytHRNavigation_checklist_menu}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:35.214" level="INFO">Clicking element 'xpath=//span[text()='Checklist']'.</msg>
+<status status="PASS" endtime="20180503 12:59:35.577" starttime="20180503 12:59:35.214"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:35.578" starttime="20180503 12:59:35.214"></status>
+</kw>
+<kw name="Click on Checklist Dashboard Sub Menu" library="GreytHRNavigation">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GreytHRNavigation_checklist_dashboard_submenu}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:35.580" level="INFO">Clicking element 'xpath=//span[text()='Checklist Dashboard']'.</msg>
+<status status="PASS" endtime="20180503 12:59:49.555" starttime="20180503 12:59:35.579"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:49.555" starttime="20180503 12:59:35.578"></status>
+</kw>
+<kw name="Verify Checklist Dashboard page is displayed" library="TM_ChecklistDashboardPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TM_ChecklistDashboardPage_Checklist_Page_Title}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:49.610" starttime="20180503 12:59:49.556"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${TM_ChecklistDashboardPage_Checklist_Page_Title}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:49.611" level="INFO">Verifying element 'xpath=//p[@class='checklist-label']' is visible.</msg>
+<status status="PASS" endtime="20180503 12:59:49.651" starttime="20180503 12:59:49.610"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:49.651" starttime="20180503 12:59:49.555"></status>
+</kw>
+<kw name="wait until Loader is disappeared" library="TM_TaskLandingPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:49.693" starttime="20180503 12:59:49.652"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>page should contain element</arg>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20180503 12:59:49.708" level="INFO">Current page contains element 'xpath=//tm-loader/div[@class='modal fade in']/div/div'.</msg>
+<status status="PASS" endtime="20180503 12:59:49.708" starttime="20180503 12:59:49.694"></status>
+</kw>
+<msg timestamp="20180503 12:59:49.708" level="INFO">${abc} = True</msg>
+<status status="PASS" endtime="20180503 12:59:49.708" starttime="20180503 12:59:49.693"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${abc}</arg>
+<arg>wait until Loader is disappeared1</arg>
+</arguments>
+<kw name="wait until Loader is disappeared1" library="TM_TaskLandingPage">
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:50.781" starttime="20180503 12:59:49.710"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180503 12:59:51.782" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180503 12:59:51.782" starttime="20180503 12:59:50.781"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:51.782" starttime="20180503 12:59:49.709"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:51.782" starttime="20180503 12:59:49.709"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:51.783" starttime="20180503 12:59:49.652"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:51.783" starttime="20180503 12:59:30.897"></status>
+</kw>
+<kw name="Search and view the checklist" library="TMAdminApp">
+<arguments>
+<arg>Auto checklist</arg>
+</arguments>
+<kw name="Search for a checklist" library="TM_ChecklistDashboardPage">
+<arguments>
+<arg>${Checklist_Name}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TM_ChecklistDashboardPage_Checklist_Search_field}</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:51.840" starttime="20180503 12:59:51.786"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TM_ChecklistDashboardPage_Checklist_Search_field}</arg>
+<arg>${Checklist_Name}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:51.841" level="INFO">Typing text 'Auto checklist' into text field 'xpath=//div[@class='menu-header']/div/input'</msg>
+<status status="PASS" endtime="20180503 12:59:52.161" starttime="20180503 12:59:51.840"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:52.161" starttime="20180503 12:59:51.785"></status>
+</kw>
+<kw name="wait until Loader is disappeared" library="TM_TaskLandingPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:54.384" starttime="20180503 12:59:52.162"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>page should contain element</arg>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20180503 12:59:54.414" level="INFO">Current page contains element 'xpath=//tm-loader/div[@class='modal fade in']/div/div'.</msg>
+<status status="PASS" endtime="20180503 12:59:54.414" starttime="20180503 12:59:54.385"></status>
+</kw>
+<msg timestamp="20180503 12:59:54.415" level="INFO">${abc} = True</msg>
+<status status="PASS" endtime="20180503 12:59:54.415" starttime="20180503 12:59:54.385"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${abc}</arg>
+<arg>wait until Loader is disappeared1</arg>
+</arguments>
+<kw name="wait until Loader is disappeared1" library="TM_TaskLandingPage">
+<kw name="Wait Until Element Is Not Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is not visible.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:56.492" starttime="20180503 12:59:54.417"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180503 12:59:57.493" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180503 12:59:57.493" starttime="20180503 12:59:56.492"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:57.494" starttime="20180503 12:59:54.416"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:57.494" starttime="20180503 12:59:54.415"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:57.495" starttime="20180503 12:59:52.161"></status>
+</kw>
+<kw name="Select the checklist fron the list" library="TM_ChecklistDashboardPage">
+<arguments>
+<arg>${Checklist_Name}</arg>
+</arguments>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${TM_ChecklistDashboardPage_Checklist_List}</arg>
+<arg>abc</arg>
+<arg>${Checklist_Name}</arg>
+</arguments>
+<assign>
+<var>${Replaced_String}</var>
+</assign>
+<msg timestamp="20180503 12:59:57.501" level="INFO">${Replaced_String} = xpath=(//p[@title="Auto checklist"])[1]</msg>
+<status status="PASS" endtime="20180503 12:59:57.501" starttime="20180503 12:59:57.499"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${Replaced_String}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" endtime="20180503 12:59:57.568" starttime="20180503 12:59:57.502"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Replaced_String}</arg>
+</arguments>
+<msg timestamp="20180503 12:59:57.569" level="INFO">Clicking element 'xpath=(//p[@title="Auto checklist"])[1]'.</msg>
+<status status="PASS" endtime="20180503 12:59:57.682" starttime="20180503 12:59:57.569"></status>
+</kw>
+<status status="PASS" endtime="20180503 12:59:57.682" starttime="20180503 12:59:57.496"></status>
+</kw>
+<kw name="wait until Loader is disappeared" library="TM_TaskLandingPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TM_LandingPage_Loader}</arg>
+<arg>5s</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180503 13:00:03.291" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180503 13:00:03.291" starttime="20180503 13:00:02.903"></status>
+</kw>
+<msg timestamp="20180503 13:00:03.292" level="FAIL">Element locator 'xpath=//tm-loader/div[@class='modal fade in']/div/div' did not match any elements after 5 seconds</msg>
+<status status="FAIL" endtime="20180503 13:00:03.292" starttime="20180503 12:59:57.683"></status>
+</kw>
+<status status="FAIL" endtime="20180503 13:00:03.293" starttime="20180503 12:59:57.683"></status>
+</kw>
+<status status="FAIL" endtime="20180503 13:00:03.293" starttime="20180503 12:59:51.784"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180503 13:00:06.594" starttime="20180503 13:00:03.294"></status>
+</kw>
+<status status="PASS" endtime="20180503 13:00:06.595" starttime="20180503 13:00:03.293"></status>
+</kw>
+<status status="FAIL" endtime="20180503 13:00:06.595" critical="yes" starttime="20180503 12:59:14.466">Element locator 'xpath=//tm-loader/div[@class='modal fade in']/div/div' did not match any elements after 5 seconds</status>
+</test>
+<doc>Task Managemnet Automation is starting...</doc>
+<status status="FAIL" endtime="20180503 13:00:06.599" starttime="20180503 12:59:14.135"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TaskManagement" pass="0">TaskManagement</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
