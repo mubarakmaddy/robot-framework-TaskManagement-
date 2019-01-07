@@ -7,7 +7,7 @@ ${Functional} =     "Functional"
 
 *** Keywords ***
 Begin Web Test
-     open browser  about:blank   ${Browser}
+     open browser  about:blank   gc
      Maximize Browser Window
 
 End Web Test

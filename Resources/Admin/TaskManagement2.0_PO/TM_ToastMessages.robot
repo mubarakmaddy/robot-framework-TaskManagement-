@@ -2,14 +2,14 @@
 Library  Selenium2Library
 *** Variables ***
 ${TM_ToastMessages_Task_Created} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'You successfully created a task')]
-${TM_ToastMessages_Task_Updated} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'Task updated')]
-${TM_ToastMessages_Task_Completed} =            xpath=//div[@class='alert alert-success']/p[contains(text(),'Hurray! You just completed a task')]
-${TM_ToastMessages_Task_Reopened} =             xpath=//div[@class='alert alert-success']/p[contains(text(),'Task reopened')]
+${TM_ToastMessages_Task_Updated} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'All changes are saved to your task')]
+${TM_ToastMessages_Task_Completed} =            xpath=//div[@class='alert alert-success']/p[contains(text(),'Hurray! You completed a task')]
+${TM_ToastMessages_Task_Reopened} =             xpath=//div[@class='alert alert-success']/p[contains(text(),'You have re-opened your task')]
 ${TM_ToastMessages_Task_Comment_Posted} =       xpath=//div[@class='alert alert-success']/p[contains(text(),'Comment posted')]
 ${TM_ToastMessages_Task_Comment_Updated} =      xpath=//div[@class='alert alert-success']/p[contains(text(),'Comment updated')]
 ${TM_ToastMessages_Task_Comment_Deleted} =      xpath=//div[@class='alert alert-success']/p[contains(text(),'Comment deleted')]
-${TM_ToastMessages_Task_Deleted} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'Task deleted')]
-${TM_ToastMessages_Task_Duplicated} =           xpath=//div[@class='alert alert-success']/p[contains(text(),'Task duplicated')]
+${TM_ToastMessages_Task_Deleted} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'You have deleted your task')]
+${TM_ToastMessages_Task_Duplicated} =           xpath=//div[@class='alert alert-success']/p[contains(text(),'You have created a copy of your task')]
 ${TM_ToastMessages_Checklist_Created} =         xpath=//div[@class='alert alert-success']/p[contains(text(),'You successfully created a checklist')]
 ${TM_ToastMessages_Checklist_Updated} =         xpath=//div[@class='alert alert-success']/p[contains(text(),'Checklist updated')]
 ${TM_ToastMessages_Checklist_Deleted} =         xpath=//div[@class='alert alert-success']/p[contains(text(),'Checklist deleted')]
@@ -37,6 +37,10 @@ Verify Task Updated Success Message is displayed
 Verify Task Completed Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Completed}            10s
     element should be visible       ${TM_ToastMessages_Task_Completed}
+
+Verify Task Reopened Success Message is displayed
+    wait until element is visible   ${TM_ToastMessages_Task_Reopened}            10s
+    element should be visible       ${TM_ToastMessages_Task_Reopened}
 
 Verify Task Comment Posted Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Comment_Posted}       10s

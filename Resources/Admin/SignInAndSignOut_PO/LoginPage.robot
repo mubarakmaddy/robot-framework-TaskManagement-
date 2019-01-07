@@ -7,16 +7,17 @@ ${LoginPage_Login_Button} =          id=login-button
 
 *** Keywords ***
 Load GreytHR
-    go to  ${URL.${Enironment}}
+    [Arguments]  ${URL}
+    go to  ${URL}
 
 Enter User Name
-    [Arguments]  ${Login_credentials}
+    [Arguments]  ${User_Name}
     wait until element is visible   ${LoginPage_UserName_TextField}  5s
-    input text                      ${LoginPage_UserName_TextField}  ${Login_credentials.UserName}
+    input text                      ${LoginPage_UserName_TextField}  ${User_Name}
 
 Enter Password
-    [Arguments]  ${Login_credentials}
-    input password                  ${LoginPage_Password_TextField}  ${Login_credentials.Password}
+    [Arguments]  ${Password}
+    input password                  ${LoginPage_Password_TextField}  ${Password}
 
 Click on Login button
     click button                    ${LoginPage_Login_Button}

@@ -3,7 +3,6 @@ Library   Selenium2Library
 *** Variables ***
 
 ${GreytHRNavigation_Task&Checkslit_Menu1} =                    xpath=(//i[@class="icon-tasks"])[1]
-${GreytHRNavigation_Task&Checkslit_Menu2} =                    xpath=(//i[@class="icon-tasks"])[2]
 
 ${GreytHRNavigation_ProjectManagement_Menu1} =                 xpath=(//i[@class="icon-gt-project-management2"])[1]
 ${GreytHRNavigation_ProjectManagement_Menu2} =                 xpath=(//i[@class="icon-gt-project-management2"])[2]
@@ -27,11 +26,8 @@ ${GreytHRNavigation_Checklist_Dashboard_subMenu} =             xpath=//span[text
 
 *** Keywords ***
 
-Click on unexpanded Taskmanagement menu
+Click on Tasks menu
     click element   ${GreytHRNavigation_Task&Checkslit_Menu1}
-
-Click on expanded Taskmanagement menu
-    click element   ${GreytHRNavigation_Task&Checkslit_Menu2}
 
 Click on unexpanded ProjectManagement menu
     click element   ${GreytHRNavigation_ProjectManagement_Menu1}
