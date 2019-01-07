@@ -2,28 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="103e4c75-d686-4006-9166-778569e78977" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_ChecklistApp.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Admin_PO/Settings_PO/System Settings_PO/Checklist_PO/Checklist_Dashboard_PO/GHR_Admin_ChecklistDashboardPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/TaskManagement/TMInputData.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Data/TaskManagement/TMInputData.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/Home_PO/GreytHRHomePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/Home_PO/GreytHRHomePage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/Navigation_PO/GreytHRNavigation.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/Navigation_PO/GreytHRNavigation.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/SignInAndSignOut_PO/LoginPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/SignInAndSignOut_PO/LoginPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistForm.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_OnbordingPage.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskLandingPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskLandingPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskTemplateForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskTemplateForm.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Common.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Common.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Results/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Results/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/Employee_PO/Admin/ExcelImport.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Employee_PO/Admin_PO/ExcelImportPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/Home_PO/GreytHRHomePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Home_PO/GHR_Admin_HomePage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/Navigation_PO/GreytHRNavigation.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Navigation_PO/GHR_Admin_Navigation.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/PMAdminApp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_ProjectsApp.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/CreateProjectForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/CreateProjectForm.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/ProjectOverview.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/ProjectOverview.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/UpdateProjectForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/UpdateProjectForm.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/ProjectManagement/PM_ToastMessages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/PM_ToastMessages.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/ProjectManagement/Workdays/ProjectWorkdays.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Workdays_PO/ProjectWorkdays.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/SignInAndSignOut_PO/LoginPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Common_PO/SignInAndSignOut_PO/GHR_LoginPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_TasksApp.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_CreateTaskForm.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_LandingPage.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistDashboardPage.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Settings_PO/System Settings_PO/Checklist_PO/Checklist_Dashboard_PO/GHR_Admin_ChecklistForm.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskForm.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskLandingPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskLandingPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskTemplateForm.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskTemplateForm.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TasksToastMessages.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Common.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Common_PO/GHR_Common.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/DataManager.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Common_PO/DataManager.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Admin/ProjectManagement.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Admin/ProjectManagement.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/Admin/TaskManagement.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Admin/TaskManagement.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,64 +45,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/Admin/TaskManagement.robot">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="181" selection-start-line="181" selection-end-line="181" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#0#736#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="60" selection-start-line="60" selection-end-line="60" selection-end-column="51" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tests/Admin/TaskManagement.robot">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_TasksApp.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#576#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskForm.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Project_Workdays</find>
       <find>CT</find>
       <find>CreateTaskForm</find>
       <find>Click on Comment Edit icon of selected comment</find>
@@ -122,6 +99,15 @@
       <find>delete</find>
       <find>option</find>
       <find>optio</find>
+      <find>D:\D\robot-framework(TaskManagement)\Resources\Admin\Tasks_PO\GHR_Admin_TasksToastMessages.robot</find>
+      <find>Navigate to Task Management Page</find>
+      <find>TM_TaskLandingPage.wait until Loader is disappeared</find>
+      <find>LoginPage</find>
+      <find>GreytHRHomePage</find>
+      <find>GreytHRNavigation</find>
+      <find>TM_TaskLandingPage</find>
+      <find>TM_ChecklistDashboardPage</find>
+      <find>TM_TaskForm</find>
     </findStrings>
     <replaceStrings>
       <replace>Excel_Import</replace>
@@ -133,6 +119,14 @@
       <replace>TM_TaskLandingPage</replace>
       <replace>GreytHRNavigation</replace>
       <replace>TaskTemplateForm</replace>
+      <replace>Navigate to Tasks Page</replace>
+      <replace>GHR_Common.wait until Loader is disappeared</replace>
+      <replace>GHR_LoginPage</replace>
+      <replace>GHR_Admin_HomePage</replace>
+      <replace>GHR_Admin_Navigation.robot</replace>
+      <replace>GHR_Admin_TaskLandingPage</replace>
+      <replace>GHR_Admin_ChecklistDashboardPage</replace>
+      <replace>GHR_Admin_TaskForm</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -172,8 +166,19 @@
         <option value="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskLandingPage.robot" />
         <option value="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot" />
         <option value="$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot" />
-        <option value="$PROJECT_DIR$/Tests/Admin/TaskManagement.robot" />
         <option value="$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin/Task&amp;Checklist2.0_PO/TM_ChecklistDashboardPage.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin/GHR_Admin_Checklist.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin/Checklist2.0_PO/TM_ChecklistDashboardPage.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin/GHR_Admin_TasksApp.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin/Settings_PO/System Settings/Checklist_PO/GHR_Admin_ChecklistApp.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_ChecklistApp.robot" />
+        <option value="$PROJECT_DIR$/Resources/Common_PO/Common.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskLandingPage.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_TasksApp.robot" />
+        <option value="$PROJECT_DIR$/Tests/Admin/TaskManagement.robot" />
+        <option value="$PROJECT_DIR$/Resources/Common_PO/GHR_Common.robot" />
+        <option value="$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskForm.robot" />
       </list>
     </option>
   </component>
@@ -210,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,12 +232,41 @@
               <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
               <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin_PO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
               <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
-              <item name="Results" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin_PO" type="462c0819:PsiDirectoryNode" />
+              <item name="Home_PO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin_PO" type="462c0819:PsiDirectoryNode" />
+              <item name="Navigation_PO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin_PO" type="462c0819:PsiDirectoryNode" />
+              <item name="Tasks_PO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_PO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robot-framework(TaskManagement)" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_PO" type="462c0819:PsiDirectoryNode" />
+              <item name="SignInAndSignOut_PO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="robot-framework(TaskManagement)" type="b2602c69:ProjectViewProjectNode" />
@@ -248,14 +283,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../robot-framework(Project Management)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -266,14 +300,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GreytHR\Resources\Admin" />
-      <recent name="D:\GreytHR\Data\ProjectManagement" />
-      <recent name="D:\GreytHR\Data\Taskmanagement" />
-      <recent name="D:\GreytHR\Resources\Admin\Employee_PO" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GreytHR\Resources\Admin\TaskManagement2.0_PO" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\D\robot-framework(TaskManagement)\Resources\Common_PO" />
+      <recent name="D:\D\robot-framework(TaskManagement)\Resources\Common" />
+      <recent name="D:\D\robot-framework(TaskManagement)\Resources\Admin" />
+      <recent name="D:\D\robot-framework(TaskManagement)\Resources\Admin\Projects_PO" />
+      <recent name="D:\D\robot-framework(TaskManagement)\Resources\Admin\Settings_PO\System Settings\Checklist_PO" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,7 +372,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25792143" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -354,7 +389,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32756326" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5101394" side_tool="true" weight="0.29560587" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32207793" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4898606" visible="true" weight="0.28532976" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4898606" weight="0.28532976" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -376,68 +411,35 @@
     <entry file="file://C:/Python27/Lib/abc.py" />
     <entry file="file://C:/Python27/Lib/aifc.py" />
     <entry file="file://C:/Python27/Lib/lib-tk/FixTk.py" />
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/ProjectManagement/Workdays/ProjectWorkdays.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Workdays_PO/ProjectWorkdays.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/ProjectOverview.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/ProjectOverview.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/UpdateProjectForm.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/UpdateProjectForm.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/ProjectManagement/PM_ToastMessages.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/keywords/_element.py" />
     <entry file="file://C:/Python27/Lib/site-packages/SeleniumLibrary/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Resources/Admin/Settings_PO/System Settings/Checklist/ChecklistDashboard.robot" />
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/ProjectManagement/Overview/CreateProjectForm.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/Selenium2Library/keywords/_formelement.py" />
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_CreateTaskForm.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_LandingPage.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_LandingPage.robot" />
     <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_OnbordingPage.robot" />
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/Employee_PO/Admin/ExcelImport.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Results/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Admin/ProjectManagement.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="97" column="28" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Admin/abc.py" />
     <entry file="file://$PROJECT_DIR$/CustomLib/Csv.py">
@@ -447,24 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/DataManager.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/Selenium2Library/keywords/_element.py" />
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/Selenium2Library/keywords/_javascript.py" />
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/Selenium2Library/keywords/_waiting.py" />
     <entry file="file://C:/Python27/Lib/site-packages/robot/libraries/BuiltIn.py" />
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistDashboardPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="89" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/keywords/_browsermanagement.py" />
     <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,14 +467,7 @@
     <entry file="file://$PROJECT_DIR$/Data/TaskManagement/CreateTaskData.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Common.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/Navigation_PO/GreytHRNavigation.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Navigation_PO/GHR_Admin_Navigation.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="98" selection-start-line="4" selection-start-column="98" selection-end-line="4" selection-end-column="98" />
@@ -503,44 +484,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/SignInAndSignOut_PO/LoginPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/Home_PO/GreytHRHomePage.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Home_PO/GHR_Admin_HomePage.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_OnbordingPage.robot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ChecklistForm.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="123" column="108" selection-start-line="123" selection-start-column="108" selection-end-line="123" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskTemplateForm.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="49" column="95" lean-forward="true" selection-start-line="49" selection-start-column="95" selection-end-line="49" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/PMAdminApp.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="114" column="52" lean-forward="true" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_OnbordingPage.robot" />
     <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/keywords/_waiting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -548,44 +499,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskLandingPage.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskTemplateForm.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="387">
+          <caret line="49" column="94" selection-start-line="49" selection-start-column="94" selection-end-line="49" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement1.0_PO/TM_CreateTaskForm.robot" />
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Settings_PO/System Settings_PO/Checklist_PO/Checklist_Dashboard_PO/GHR_Admin_ChecklistForm.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2089">
+          <caret line="123" column="108" selection-start-line="123" selection-start-column="108" selection-end-line="123" selection-end-column="108" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_ToastMessages.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Employee_PO/Admin_PO/ExcelImportPage.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="60" selection-start-line="60" selection-end-line="60" selection-end-column="51" />
+        <state relative-caret-position="102">
+          <caret line="11" column="85" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TaskManagement2.0_PO/TM_TaskForm.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/Overview_PO/CreateProjectForm.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
+        <state relative-caret-position="561">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Common_PO/SignInAndSignOut_PO/GHR_LoginPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Settings_PO/System Settings_PO/Checklist_PO/Checklist_Dashboard_PO/GHR_Admin_ChecklistDashboardPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Common_PO/GHR_CommonActions.robot" />
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_ProjectsApp.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_ChecklistApp.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TasksToastMessages.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Admin/ProjectManagement.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Common_PO/DataManager.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Projects_PO/PM_ToastMessages.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Admin/TaskManagement.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        <state relative-caret-position="238">
+          <caret line="47" column="80" lean-forward="true" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#338#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Admin/TMAdminApp.robot">
+    <entry file="file://$PROJECT_DIR$/Resources/Common_PO/GHR_Common.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+        <state relative-caret-position="323">
+          <caret line="19" column="128" lean-forward="true" selection-start-line="19" selection-start-column="128" selection-end-line="19" selection-end-column="128" />
           <folding>
-            <element signature="e#0#736#0" expanded="true" />
+            <element signature="e#0#93#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskLandingPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/GHR_Admin_TasksApp.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Admin_PO/Tasks_PO/GHR_Admin_TaskForm.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>

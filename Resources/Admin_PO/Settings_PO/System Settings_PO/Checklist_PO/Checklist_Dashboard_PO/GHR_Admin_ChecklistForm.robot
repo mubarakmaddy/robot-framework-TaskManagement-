@@ -69,9 +69,9 @@ Set Checklist Event Category
 
 Set Checklist Event Type
     [Arguments]  ${Event_Type}
-    #Add Employee
-    #Employee Birth Day
-    #Employee Joining Anniversary
+    #Add Employee_PO
+    #Employee_PO Birth Day
+    #Employee_PO Joining Anniversary
     #Employees Confirm Date
     #Employees Last Working Day
     #Payroll Cutoff
@@ -105,13 +105,13 @@ Enter number of days for Before/After
 Set Checklist Owner
     [Arguments]  ${Checklist_Owner}
 
-#    CoreHR::Employee
-#            Employee User
+#    CoreHR::Employee_PO
+#            Employee_PO User
 #            Manager
 #            Manager'S Manager
 #            Named User
 #
-#    Payroll::Employee User
+#    Payroll::Employee_PO User
 #             Named User
     click element                               ${TM_ChecklistForm_Owner_Drop_Down}
     ${Replaced_String} =  replace string        ${TM_ChecklistForm_Owner_options}                   abc     ${Checklist_Owner}

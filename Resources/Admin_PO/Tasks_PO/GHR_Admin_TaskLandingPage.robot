@@ -7,7 +7,6 @@ ${TM_LandingPage_Tasks_Page_Title} =            xpath=//tm-header/header/label[t
 ${TM_LandingPage_Create_Task_Button} =          xpath=//div[@class='create-task-btn']/button
 ${TM_LandingPage_Open_Tasks_Tab} =              xpath=//button[contains(text(),'open')]
 ${TM_LandingPage_Completed_Tasks_Tab} =         xpath=//button[contains(text(),'completed')]
-${TM_LandingPage_Loader} =                      xpath=//h4[text()='Loading...']
 ${TM_LandingPage_Task_Title} =                  xpath=(//div[@title='abc'])[1]
 ${TM_LandingPage_Task_Complete_Checkbox} =      xpath=(//div[@title='abc'])[1]/preceding-sibling::div//i
 ${TM_LandingPage_Task_Reopen_Checkbox} =        xpath=(//div[@title='abc'])[1]/preceding-sibling::div//i
@@ -17,15 +16,6 @@ ${TM_LandingPage_Task_Filter_Icon} =            xpath=//div[@class='checklist-ro
 
 
 *** Keywords ***
-Wait until Loader is disappeared
-    sleep  2s
-    ${Loader_Status}=  run keyword and return status  page should contain element   ${TM_LandingPage_Loader}                    20s
-    run keyword if                                                                  ${Loader_Status}                            Wait for Loader to disappear
-
-
-Wait for Loader to disappear
-    wait until element is not visible                                               ${TM_LandingPage_Loader}                    20s
-#    sleep   1s
 
 Wait Untill Tasks page is loaded
      Wait Until Page Contains Element                                               ${TM_LandingPage_Tasks_Page_Title}          10s

@@ -5,7 +5,7 @@
 #${Enironment} =  Task
 #${Browser} =  gc
 #&{URL}   Task=http://indy6staging.greythr.com/   Project=http://project8.gtproj.greytip2.in/
-#&{Admin_Login_credentials}      UserName=Admin          Password=sa
+#&{Admin_Login_credentials}      UserName=Admin_PO          Password=sa
 #&{Majordmo_Login_credentials}   UserName=Majordomo1     Password=sa
 
 ###Input Data###
