@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary        # timeout=5.0, implicit_wait=5.0, run_on_failure=Capture Page Screenshot, screenshot_root_directory=None
 Library  String
 *** Variables ***
 ${TM_TaskTemplateForm_Task_Template_Name} =               xpath=//input[@name='taskTemplateName']

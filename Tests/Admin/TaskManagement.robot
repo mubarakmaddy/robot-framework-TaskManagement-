@@ -1,14 +1,18 @@
 *** Settings ***
 #Author: Mubarak
 Documentation  Task Managemnet Automation is starting...
-Resource  ../../Resources/Common_PO/Common.robot
+
+Resource  ../../Resources/Common_PO/GHR_Common.robot
 Resource  ../../Resources/Admin_PO/GHR_Admin_TasksApp.robot
 Resource  ../../Resources/Admin_PO/GHR_Admin_ChecklistApp.robot
+Resource  ../../Resources/Admin_PO/Navigation_PO/GHR_Admin_Navigation.robot
 
-Test Setup     Common.Begin Web Test
-Test Teardown  Common.End Web Test
+Test Setup     GHR_Common.Begin Web Test
+Test Teardown  GHR_Common.End Web Test
 
-#robot -d Results Tests/Admin_PO/TaskManagement.robot
+#robot -d Results Tests/Admin/TaskManagement.robot
+
+
 
 *** Variables ***
 ${Task_Name} =                  Task 25
@@ -47,7 +51,7 @@ Perform smoke test on task module
     Duplicate the previewed task                                    ${Task_Name}
     Delete the previewed task                                       ${Task_Name}
 
-User must be able to login to GreytHR application As Admin_PO
+User must be able to login to GreytHR application As Admin
     [Tags]  ${Smoke}
     Login To GreytHR Application
 
@@ -69,17 +73,20 @@ Admin User should be able to create a Task Mapping to single checklist
     Create a task mapping to checklist instance
 
 Admin User should be able to view any task
+    [Tags]  ${Functional}
     Login To GreytHR Application
     Navigate to Tasks Page
     Search and select a Task to be previewed                        ${Task_Name}
 
 Admin User must be able to preview and update the Task Name & Description
+    [Tags]  ${Functional}
     Login To GreytHR Application
     Navigate to Tasks Page
     Search and select a Task to be previewed                        ${Task_Name}
     Update Task Name and Description                                ${Task_Name}                    ${Task_Name_To_Be_Updated}
 
 Admin User should be able to complete the task
+    [Tags]  ${Functional}
     Login To GreytHR Application
     Navigate to Tasks Page
     Complete Task                                                   ${Task_Name}

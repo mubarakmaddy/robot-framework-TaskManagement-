@@ -13,7 +13,7 @@ Resource  ../../Resources/Admin_PO/Settings_PO/System Settings_PO/Checklist_PO/C
 *** Variables ***
 ${URL} =        https://indy6staging.greythr.com
 ${User_Name} =  majordomo1
-${Password} =   Majordomo@12345
+${Password} =   majordomo@12345
 
 *** Keywords ***
 
@@ -28,8 +28,15 @@ Login To GreytHR Application
 #Verify user is logged in successfully
 #    GHR_Admin_HomePage.Verify Home page is loaded
 
+Scroll
+    Scroll Element Into View    //div[text()='Kumar has joined us in the company on 28 Nov 2018,']/following-sibling::div/div/div/div[@class='span1']
+#    click element               //div[text()='Twelve has joined us in the company on 26 Dec 2018,']/following-sibling::div/div/div/div[@class='span1']
+    if
+    press key   ARROW_DOWN
+
+
 Navigate to Tasks Page
-    GHR_Admin_Navigation.robot.Click on Tasks menu
+    GHR_Admin_Navigation.Click on Tasks menu
     GHR_Admin_TaskLandingPage.Wait Untill Tasks page is loaded
     GHR_Admin_TaskLandingPage.Verify Tasks page is loaded
 

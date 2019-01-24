@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary        # timeout=20.0, implicit_wait=20.0, run_on_failure=Capture Page Screenshot, screenshot_root_directory=None
 Library  String
 
 *** Variables ***
@@ -63,7 +63,7 @@ ${GHR_Admin_TaskForm_Actions_Popup} =              xpath=(//div[@class='modal-co
 
 Verify selected Task is Previewed
     [Arguments]  ${Task_Name}
-    ${replaced_text} =  Replace String      ${GHR_Admin_TaskForm_Header_Title}             abc                 ${Task_Name}
+    ${Replaced_String} =  Replace String    ${GHR_Admin_TaskForm_Header_Title}          abc                 ${Task_Name}
     wait until element is visible           ${Replaced_String}                        10s
     element should be visible               ${Replaced_String}
 
@@ -118,7 +118,7 @@ Click on Due Date input field
 
 Set Month
     [Arguments]  ${Given_Month}
-    :For   ${i}  In Range   0   12
+    :For   ${i}  IN RANGE   0   12
     \   ${Present_Month} =  get text        ${GHR_Admin_TaskForm_Month_Lable}
     \   Exit For Loop If	                '${Present_Month}'=='${Given_Month}'
     \   click element                       ${GHR_Admin_TaskForm_Next_Month_Button}
@@ -131,11 +131,11 @@ Set Year
     run keyword if                          ${Result}<0                             Future Year         ${Result}
 Past Year
     [Arguments]  ${Result}
-    :For   ${i}  In Range   0               ${Result}
+    :For   ${i}  IN RANGE   0               ${Result}
     \   click element                       ${GHR_Admin_TaskForm_Previous_Year_Button}
 Future Year
     [Arguments]  ${Result}
-    :For   ${i}  In Range                   ${Result}                               -1
+    :For   ${i}  IN RANGE                   ${Result}                               -1
     \   click element                       ${GHR_Admin_TaskForm_Next_Year_Button}
 
 Set Day
@@ -235,9 +235,9 @@ Enter New Tag and Verify tag is created
 #    @{Tag_Name}  create list  a   b
 #    :For  ${i}  IN    @{Tag_Name}
 #    \   click element                           ${GHR_Admin_TaskForm_add_tags_search_field}
-#    \   input text                              ${GHR_Admin_TaskForm_add_tags_search_field}            ${Tag_Name}
+#    \   input text                              ${GHR_Admin_TaskForm_add_tags_search_field}                     ${Tag_Name}
 #    \   press key                               ${GHR_Admin_TaskForm_add_tags_search_field}    \\13
-#    \   ${Replaced_String} =  replace string    ${GHR_Admin_TaskForm_tag_label}                abc     ${i}
+#    \   ${Replaced_String} =  replace string    ${GHR_Admin_TaskForm_tag_label}                abc              ${i}
 #    \   wait until element is visible           ${Replaced_String}
 #    \   element should be visible               ${Replaced_String}
 

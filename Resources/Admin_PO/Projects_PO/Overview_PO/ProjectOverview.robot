@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Selenium2Library
+Library   SeleniumLibrary
 *** Variables ***
 ${Project_Overview_Header} =                          xpath=//h2[text()='Overview']
 ${Project_Overview_Create_Project_Button} =           xpath=//button[contains(text(),'Create project')]

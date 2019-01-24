@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Selenium2Library
+Library   SeleniumLibrary
 
 *** Variables ***
 ${PM_ToastMessage_Duplicate_Project_Name_Message} =     xpath=//div[@class='alert alert-danger']/p[contains(text(),'again with new project name')]

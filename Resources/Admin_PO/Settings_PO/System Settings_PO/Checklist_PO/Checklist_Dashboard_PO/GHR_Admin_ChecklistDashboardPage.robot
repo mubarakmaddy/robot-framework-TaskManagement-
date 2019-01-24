@@ -1,10 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary         #timeout=5.0, implicit_wait=5.0, run_on_failure=Capture Page Screenshot, screenshot_root_directory=None
 Library  String
-Resource  ../../Resources/Admin/TaskManagement2.0_PO/TM_ChecklistDashboardPage.robot
-Resource  ../../Resources/Admin/TaskManagement2.0_PO/TM_ChecklistForm.robot
-Resource  ../../Resources/Admin/TaskManagement2.0_PO/TM_TaskTemplateForm.robot
-Resource  ../../Data/TaskManagement/TMInputData.robot
+#Resource  ../../Data/TaskManagement/TMInputData.robot
 
 *** Variables ***
 ${TM_ChecklistDashboardPage_Checklist_Page_Title} =                 xpath=//p[@class='checklist-label']

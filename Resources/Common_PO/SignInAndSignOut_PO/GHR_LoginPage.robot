@@ -1,5 +1,6 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary         #timeout=5.0, implicit_wait=5.0, run_on_failure=Capture Page Screenshot, screenshot_root_directory=None
+
 *** Variables ***
 ${LoginPage_UserName_TextField} =    name=j_username
 ${LoginPage_Password_TextField} =    name=j_password

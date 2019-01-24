@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Selenium2Library
+Library   SeleniumLibrary
 
 *** Variables ***
 ${Create_Project_Form_Project_Name} =   xpath=(//input[@placeholder='Project name'])[2]

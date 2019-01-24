@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary         #timeout=5.0, implicit_wait=5.0, run_on_failure=Capture Page Screenshot, screenshot_root_directory=None
 *** Variables ***
 ${TM_ToastMessages_Task_Created} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'You successfully created a task')]
 ${TM_ToastMessages_Task_Updated} =              xpath=//div[@class='alert alert-success']/p[contains(text(),'All changes are saved to your task')]
@@ -29,34 +29,42 @@ ${TM_ToastMessages_Popup_Cancel_Action} =       xpath=//div[@class='row popup-bt
 Verify Task Created Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Created}              10s
     element should be visible       ${TM_ToastMessages_Task_Created}
+    wait until element is not visible  ${TM_ToastMessages_Task_Created}
 
 Verify Task Updated Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Updated}              10s
     element should be visible       ${TM_ToastMessages_Task_Updated}
+    wait until element is not visible  ${TM_ToastMessages_Task_Updated}
 
 Verify Task Completed Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Completed}            10s
     element should be visible       ${TM_ToastMessages_Task_Completed}
+    wait until element is not visible  ${TM_ToastMessages_Task_Completed}
 
 Verify Task Reopened Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Reopened}            10s
     element should be visible       ${TM_ToastMessages_Task_Reopened}
+    wait until element is not visible  ${TM_ToastMessages_Task_Reopened}
 
 Verify Task Comment Posted Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Comment_Posted}       10s
     element should be visible       ${TM_ToastMessages_Task_Comment_Posted}
+    wait until element is not visible  ${TM_ToastMessages_Task_Comment_Posted}
 
 Verify Task Comment Updated Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Comment_Updated}      10s
     element should be visible       ${TM_ToastMessages_Task_Comment_Updated}
+    wait until element is not visible  ${TM_ToastMessages_Task_Comment_Updated}
 
 Verify Task Comment Deleted Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Comment_Deleted}      10s
     element should be visible       ${TM_ToastMessages_Task_Comment_Deleted}
+    wait until element is not visible  ${TM_ToastMessages_Task_Comment_Deleted}
 
 Verify Task deleted Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Deleted}              10s
     element should be visible       ${TM_ToastMessages_Task_Deleted}
+    wait until element is not visible  ${TM_ToastMessages_Task_Deleted}
 
 Verify Task duplicated Success Message is displayed
     wait until element is visible   ${TM_ToastMessages_Task_Duplicated}           10s
